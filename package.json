@@ -1,0 +1,28 @@
+{
+  "name": "vitorluizc-portfolio",
+  "version": "0.2.0",
+  "description": "@VitorLuizC page.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VitorLuizC/VitorLuizC.github.io.git"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "Vitor Cavalcanti",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VitorLuizC/VitorLuizC.github.io/issues"
+  },
+  "homepage": "https://github.com/VitorLuizC/VitorLuizC.github.io#readme",
+  "dependencies": {
+    "bubbles-animation": "^0.1.0",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.8.2"
+  }
+}
