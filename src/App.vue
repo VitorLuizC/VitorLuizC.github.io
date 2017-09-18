@@ -1,7 +1,7 @@
 <template>
 	<main class="container">
 		<figure class="background">
-			<canvas ref="animation" />
+			<canvas class="animation" />
 		</figure>
 		<h1 class="name">Vitor Cavalcanti</h1>
 		<h2 class="position">Web Developer</h2>
@@ -27,7 +27,7 @@
 			}
 		},
 		mounted () {
-			animate(this.$refs.animation, {
+			animate('.animation', {
 				size: [1, 250],
 				quantity: 1,
 				interval: 3,
