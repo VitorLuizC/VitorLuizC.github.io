@@ -8,7 +8,6 @@
     "build": "webpack --env production --config build",
     "start": "webpack-dev-server --config build"
   },
-  "prepush": "build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VitorLuizC/VitorLuizC.github.io.git"
@@ -33,7 +32,6 @@
     "extract-text-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^2.30.1",
     "offline-plugin": "^4.8.3",
-    "pre-push": "^0.1.1",
     "prerender-spa-plugin": "^2.1.0",
     "vue": "^2.4.4",
     "vue-loader": "^13.0.4",
