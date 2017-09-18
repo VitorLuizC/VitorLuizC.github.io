@@ -1,6 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlPlugin = require('html-webpack-plugin');
+const OfflinePlugin = require('offline-plugin');
 const PrerenderPlugin = require('prerender-spa-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -76,7 +77,10 @@ module.exports = (env) => Object.assign({}, common, {
 		}),
 		...env !== 'production' ? [] : [
 			new webpack.optimize.UglifyJsPlugin(),
-			new PrerenderPlugin(path.resolve(__dirname, '../'), ['/'])
+			new PrerenderPlugin(path.resolve(__dirname, '../'), ['/']),
+			new OfflinePlugin({
+				AppCache: false
+			})
 		]
 	]
 });
