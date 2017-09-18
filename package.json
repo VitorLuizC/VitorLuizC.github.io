@@ -22,7 +22,9 @@
     "url": "https://github.com/VitorLuizC/VitorLuizC.github.io/issues"
   },
   "homepage": "https://github.com/VitorLuizC/VitorLuizC.github.io#readme",
-  "dependencies": {},
+  "dependencies": {
+    "bubbles-animation": "^0.1.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",

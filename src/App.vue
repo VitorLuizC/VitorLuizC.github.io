@@ -1,5 +1,8 @@
 <template>
 	<main class="container">
+		<figure class="background">
+			<canvas ref="animation" />
+		</figure>
 		<h1 class="name">Vitor Cavalcanti</h1>
 		<h2 class="position">Web Developer</h2>
 		<ul class="links">
@@ -11,6 +14,8 @@
 </template>
 
 <script>
+	import animate from 'bubbles-animation';
+
 	export default {
 		data () {
 			return {
@@ -20,6 +25,19 @@
 					'LinkedIn': 'https://www.linkedin.com/in/vitor-luiz-cavalcanti-40071991'
 				}
 			}
+		},
+		mounted () {
+			animate(this.$refs.animation, {
+				size: [1, 250],
+				quantity: 1,
+				interval: 3,
+				color: {
+					R: 214,
+					G: 255,
+					B: 13,
+					A: .65
+				}
+			});
 		}
 	}
 </script>
